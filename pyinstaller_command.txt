@@ -1,0 +1,1 @@
+uv run pyinstaller --onefile --console --name "WingetUpgrade" --clean --noconfirm --icon="updated.ico" --add-data "updated.ico;." winget_gui_qt.py

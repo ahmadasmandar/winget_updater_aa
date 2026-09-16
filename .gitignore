@@ -1,0 +1,26 @@
+# Python caches and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments and packaging metadata
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Build and distribution artifacts
+build/
+dist/
+wheels/
+
+# Application runtime logs
+logs/
+
+# Local configuration and temporary files
+*.log
+*.tmp
+*.bak
+.env
+.env.*
+!.env.example

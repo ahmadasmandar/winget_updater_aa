@@ -1,0 +1,25 @@
+
+   - 
+                                                                                                                        
+
+   - 
+   \ 
+   | 
+                                                                                                                        
+Name                                ID                                   Version            Verf├╝gbar            Quelle
+-----------------------------------------------------------------------------------------------------------------------
+UltiMaker Cura                      Ultimaker.Cura                       5.10.0             5.10.1               winget
+Eclipse Temurin JDK mit Hotspot 21ÔÇª EclipseAdoptium.Temurin.21.JDK       21.0.3.9           21.0.7.6             winget
+Visual Studio Build Tools 2019      Microsoft.VisualStudio.2019.BuildToÔÇª 16.11.45           16.11.48             winget
+GNU Arm Embedded Toolchain 10.3-20ÔÇª Arm.GnuArmEmbeddedToolchain          < 14.2.Rel1        14.2.Rel1            winget
+Visual Studio Community 2022        Microsoft.VisualStudio.2022.CommuniÔÇª 17.13.4            17.14.5              winget
+AOMEI Partition Assistant 10.4.0    AOMEI.PartitionAssistant             10.4.0             10.8.1               winget
+Microsoft .NET Framework 4.5.1 SDK  Microsoft.DotNet.Framework.DevelopeÔÇª < 4.6.2            4.6.2                winget
+Teams Machine-Wide Installer        Microsoft.Teams.Classic              1.6.0.4472         1.8.00.12555         winget
+Microsoft Visual C++ 2015-2022 RedÔÇª Microsoft.VCRedist.2015+.x64         14.42.34433.0      14.44.35208.0        winget
+Python Launcher                     Python.Launcher                      < 3.12.0           3.12.0               winget
+Microsoft Visual C++ 2015-2022 RedÔÇª Microsoft.VCRedist.2015+.x86         14.42.34438.0      14.44.35208.0        winget
+Raspberry Pi Imager                 RaspberryPiFoundation.RaspberryPiImÔÇª 1.8.5              1.9.4                winget
+Microsoft Teams                     Microsoft.Teams                      25094.310.3616.953 25122.1415.3698.6812 winget
+13 Aktualisierungen verf├╝gbar.
+Mindestens 2 Paket verf├╝gt ├╝ber Versionsnummern, die nicht ermittelt werden k├Ânnen. Verwenden Sie ÔÇ×--include-unknownÔÇ£, um alle Ergebnisse anzuzeigen.

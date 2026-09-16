@@ -1,0 +1,18 @@
+{
+  "excluded_patterns": [
+    "adobe",
+    "camtasia",
+    "antigravity"
+  ],
+  "excluded_ids": [
+    "EPSON.EpsonScan2",
+    "Microsoft.DotNet.Framework.DeveloperPack.4.6",
+    "Microsoft.DotNet.Runtime.8",
+    "IdeaMK.STLViewer",
+    "Compuphase.Termite",
+    "Microsoft.Firewire1394LegacyDriver",
+    "AnyDesk.AnyDesk",
+    "Autodesk.Fusion"
+  ],
+  "exclude_unknown_versions": false
+}

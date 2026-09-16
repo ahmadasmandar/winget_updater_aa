@@ -1,0 +1,47 @@
+
+   - 
+                                                                                                                        
+
+   - 
+   \ 
+   | 
+                                                                                                                        
+Name                                      ID                                         Version       Verf├╝gbar     Quelle
+-----------------------------------------------------------------------------------------------------------------------
+draw.io 28.1.2                            JGraph.Draw                                28.1.2        29.0.3        winget
+Bambu Studio                              Bambulab.Bambustudio                       02.01.01.52   02.04.00.70   winget
+Git                                       Git.Git                                    2.51.2        2.52.0        winget
+HWiNFO┬« 64                                REALiX.HWiNFO                              8.30          8.34          winget
+IrfanView 4.72 (64-bit)                   IrfanSkiljan.IrfanView                     4.72          4.73          winget
+KiCad 9.0                                 KiCad.KiCad                                9.0.2         9.0.6         winget
+Notepad++ (64-bit x64)                    Notepad++.Notepad++                        8.8.8         8.8.9         winget
+Surfshark                                 Surfshark.Surfshark                        6.2.0999      6.3.0.999     winget
+Vim 9.1 (x64)                             vim.vim                                    9.1.1825      9.1.1984      winget
+Free Download Manager (All users)         SoftDeluxe.FreeDownloadManager             6.30.3.6518   6.31.0.6549   winget
+Oh My Posh                                JanDeDobbeleer.OhMyPosh                    26.23.6       28.3.0        winget
+Node.js                                   OpenJS.NodeJS.LTS                          24.11.1       24.12.0       winget
+Raspberry Pi Imager                       RaspberryPiFoundation.RaspberryPiImager    1.9.6         2.0.2         winget
+Java 8 Update 461 (64-bit)                Oracle.JavaRuntimeEnvironment              8.0.4610.11   8.0.4710.9    winget
+CMake                                     Kitware.CMake                              4.1.1         4.2.1         winget
+Eclipse Temurin JDK mit Hotspot 21.0.3+9ÔÇª EclipseAdoptium.Temurin.21.JDK             21.0.3.9      21.0.9.10     winget
+UltiMaker Cura                            Ultimaker.Cura                             5.10.2        5.11.0        winget
+AusweisApp                                Governikus.AusweisApp                      2.3.2         2.4.0         winget
+usbipd-win                                dorssel.usbipd-win                         5.2.0         5.3.0         winget
+AnyDesk                                   AnyDesk.AnyDesk                            ad 9.6.1      9.6.6         winget
+LLVM                                      LLVM.LLVM                                  21.1.1        21.1.7        winget
+OBS Studio                                OBSProject.OBSStudio                       32.0.2        32.0.4        winget
+Termite                                   Compuphase.Termite                         Unknown       3.4           winget
+Visual Studio Community 2022              Microsoft.VisualStudio.2022.Community      17.14.14      17.14.23      winget
+AOMEI Partition Assistant 10.8.2          AOMEI.PartitionAssistant                   10.8.2        10.9.2        winget
+Microsoft Visual C++ 2015-2022 RedistribÔÇª Microsoft.VCRedist.2015+.x86               14.44.35211.0 14.50.35719.0 winget
+Microsoft .NET Framework 4.5.1 SDK        Microsoft.DotNet.Framework.DeveloperPack.ÔÇª < 4.6.2       4.6.2         winget
+STL Viewer 2.3                            IdeaMK.STLViewer                           Unknown       2.3           winget
+Teams Machine-Wide Installer              Microsoft.Teams.Classic                    1.6.0.4472    1.8.00.27654  winget
+3Dconnexion 3DxWare 10                    3Dconnexion.3DxWare.10                     10.9.7.709    10.9.9.721    winget
+Camtasia 2025                             TechSmith.Camtasia                         25.2.4.12581  26.0.0.13551  winget
+PicoScope 7 T&M                           PicoTechnology.Picoscope.T&M               7.1.13.17054  7.2.10.7893   winget
+Microsoft Visual C++ 2015-2022 RedistribÔÇª Microsoft.VCRedist.2015+.x64               14.44.35211.0 14.50.35719.0 winget
+GIMP 3.0.4                                GIMP.GIMP.3                                3.0.4.0       3.0.6.1       winget
+Telegram Desktop                          Telegram.TelegramDesktop                   6.3.6         6.3.9         winget
+Python 3.13.7 (64-bit)                    Python.Python.3.13                         3.13.7        3.13.11       winget
+36 Aktualisierungen verf├╝gbar.

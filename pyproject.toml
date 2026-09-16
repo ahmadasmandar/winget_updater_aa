@@ -1,0 +1,11 @@
+[project]
+name = "winget-upgrade"
+version = "0.1.0"
+description = "Winget Upgrade"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "pip>=25.1.1",
+    "pyinstaller>=6.17.0",
+    "pyqt6>=6.9.1",
+]

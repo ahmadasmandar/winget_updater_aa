@@ -1,0 +1,2 @@
+"""Winget GUI application package."""
+

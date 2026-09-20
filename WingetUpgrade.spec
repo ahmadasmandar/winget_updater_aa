@@ -2,10 +2,10 @@
 
 
 a = Analysis(
-    ['winget_gui_qt.py'],
+    ['winget_gui/main.py'],
     pathex=[],
     binaries=[],
-    datas=[('updated.ico', '.')],
+    datas=[('winget_gui/resources/updated.ico', 'resources')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -35,5 +35,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['updated.ico'],
+    icon=['winget_gui/resources/updated.ico'],
 )

@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.pytest_cache/
 
 # Virtual environments and packaging metadata
 .venv/
@@ -13,14 +14,20 @@ env/
 build/
 dist/
 wheels/
+trash/
 
 # Application runtime logs
 logs/
+*.log
 
 # Local configuration and temporary files
-*.log
 *.tmp
 *.bak
 .env
 .env.*
 !.env.example
+
+# OS generated files
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store

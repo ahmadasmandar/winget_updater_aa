@@ -223,6 +223,11 @@ class MainWindow(QtWidgets.QMainWindow):
         self._elapsed_timer.timeout.connect(self._update_elapsed)
         self.settings = QtCore.QSettings("WingetUpgrade", "WingetUpgrade")
         self.current_theme = self.settings.value("theme", "Dark")
+        raw_show_console = self.settings.value("show_console", True)
+        if isinstance(raw_show_console, str):
+            self.show_console = raw_show_console.lower() in ("true", "1")
+        else:
+            self.show_console = bool(raw_show_console)
 
         self.config_manager = ConfigManager(logger=self.logger, parent=self)
         self.config_manager.warning.connect(self._warn)
@@ -475,6 +480,12 @@ class MainWindow(QtWidgets.QMainWindow):
             action.setChecked(self.settings.value("theme", "Dark") == theme)
             group.addAction(action)
             action.triggered.connect(lambda checked, value=theme: self.set_theme(value))
+
+        settings_menu.addSeparator()
+        self.console_action = settings_menu.addAction("Show Terminal Window During Operations")
+        self.console_action.setCheckable(True)
+        self.console_action.setChecked(self.show_console)
+        self.console_action.toggled.connect(self._toggle_show_console)
 
         about_action = self.menuBar().addAction("About")
         about_action.triggered.connect(self.about)
@@ -825,7 +836,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self._set_loading(True)
         self._set_progress("determinate", 0, len(ops))
 
-        worker = self._swap_worker("_operation", OperationWorker(ops, self.backend, self))
+        worker = self._swap_worker("_operation", OperationWorker(ops, self.backend, self, visible=self.show_console))
         worker.progress.connect(self._on_command_progress)
         worker.progress_step.connect(self._on_progress_step)
         worker.progress_count.connect(lambda value, maximum: self._set_progress("determinate", value, maximum))
@@ -926,6 +937,11 @@ class MainWindow(QtWidgets.QMainWindow):
         self.settings.setValue("theme", theme)
         apply_theme(QtWidgets.QApplication.instance(), theme)
         self.model.layoutChanged.emit()
+
+    def _toggle_show_console(self, checked):
+        self.show_console = bool(checked)
+        self.settings.setValue("show_console", self.show_console)
+        self.logger.info("Terminal window visibility set to: %s", self.show_console)
 
     def _warn(self, message):
         self.logger.warning(message)

@@ -61,17 +61,18 @@ class OperationWorker(QtCore.QThread, CancelMixin):
     package_result = QtCore.pyqtSignal(str, str, str)
     finished_all = QtCore.pyqtSignal(int, int, int, int)
 
-    def __init__(self, operations, backend=None, parent=None):
+    def __init__(self, operations, backend=None, parent=None, visible=True):
         QtCore.QThread.__init__(self, parent)
         CancelMixin.__init__(self)
         self.operations = operations
         self.backend = backend or WingetBackend()
+        self.visible = visible
         self.logger = logging.getLogger(__name__)
 
     def run(self):
         counts = [0, 0, 0, 0]
         total_ops = len(self.operations)
-        self.logger.info("Starting batch operations queue: %d total package operation(s).", total_ops)
+        self.logger.info("Starting batch operations queue: %d total package operation(s) (terminal window visible: %s).", total_ops, self.visible)
 
         for index, operation in enumerate(self.operations, 1):
             if self.is_cancelled():
@@ -89,7 +90,7 @@ class OperationWorker(QtCore.QThread, CancelMixin):
 
             try:
                 try:
-                    code, output = self.backend.operation(args, cancelled=self.is_cancelled, visible=False)
+                    code, output = self.backend.operation(args, cancelled=self.is_cancelled, visible=self.visible)
                 except TypeError as exc:
                     if "visible" not in str(exc):
                         raise

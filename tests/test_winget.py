@@ -59,3 +59,18 @@ def test_theme_stylesheets_and_colors():
     assert get_status_color("success", "Dark").name().lower() == "#10b981"
     assert get_status_color("failed", "Dark").name().lower() == "#ef4444"
 
+
+def test_operation_worker_visible_parameter(qtbot):
+    recorded_visible = []
+
+    class Backend:
+        def operation(self, args, timeout=1800, cancelled=None, visible=True):
+            recorded_visible.append(visible)
+            return 0, ""
+
+    worker = OperationWorker([(["upgrade"], "Test.App", "Upgrade", "Test")], Backend(), visible=True)
+    with qtbot.waitSignal(worker.finished, timeout=2000):
+        worker.start()
+
+    assert recorded_visible == [True]
+
